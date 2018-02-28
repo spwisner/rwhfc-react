@@ -2,6 +2,21 @@ body {
   background-color: #002664;
   font-family: 'Raleway', sans-serif; }
 
+.register {
+  padding: 0 30px;
+  font-size: 20px; }
+  .register a:hover {
+    text-decoration: none !important; }
+  .register a:focus {
+    text-decoration: none !important; }
+
+.carousel-custom-height {
+  height: 500px !important; }
+
+.white-background {
+  background-color: #fff;
+  margin: 15px; }
+
 #mc_embed_signup {
   background: #fff;
   clear: left; }
@@ -91,6 +106,9 @@ body {
   margin-right: 0 !important;
   margin-left: 20px !important; }
 
+.image-center img {
+  margin: 0 auto; }
+
 @media (min-width: 951px) {
   .row {
     overflow: hidden; }
@@ -129,4 +147,6 @@ body {
     margin-right: 5px !important;
     margin-left: 20px !important; }
   .navbar a {
-    text-align: center; } }
+    text-align: center; }
+  .footer-wrap {
+    flex-direction: column-reverse; } }

@@ -7,7 +7,7 @@ export default class Mailchimp extends React.Component {
         <div className="form-container">
           <div id="mc_embed_signup">
             <div className="form-header">
-              <h2>Sign Up For Roberts Newsletter:</h2>
+              <h2>Sign Up For Robert's Newsletter:</h2>
             </div>
             <form action="https://robertwhazelforcongress.us17.list-manage.com/subscribe/post?u=530cf2f2dd149ed8ce35fb567&amp;id=5c72927135" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate="">
               <div id="mc_embed_signup_scroll">

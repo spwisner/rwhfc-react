@@ -10,6 +10,29 @@ body {
   // color: $us-white;
 }
 
+.register {
+  padding: 0 30px;
+  font-size: 20px;
+
+  a {
+    &:hover {
+      text-decoration: none !important;
+    }
+    &:focus {
+      text-decoration: none !important;
+    }
+  }
+}
+
+.carousel-custom-height {
+  height: 500px !important;
+}
+
+.white-background {
+  background-color: $us-white;
+  margin: 15px
+}
+
 #mc_embed_signup {
   background: #fff;
   clear: left;
@@ -133,6 +156,10 @@ body {
   }
 }
 
+.image-center img{
+  margin: 0 auto;
+}
+
 @media (min-width: 951px) {
 
   .row{
@@ -200,5 +227,9 @@ body {
     a {
       text-align: center;
     }
+  }
+
+  .footer-wrap {
+    flex-direction: column-reverse;
   }
 }
