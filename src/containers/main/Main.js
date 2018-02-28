@@ -7,13 +7,25 @@ import Latest from '../latest/Latest.js'
 
 // Development Routes
 function Routes() {
-  return (
-    <Switch>
-      <Route exact path='/' component={Homepage} />
-      <Route exact path='/latest' component={Latest} />
-      <Route path="*" component={PageNotFound} />
-    </Switch>
-  )
+  let isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+
+  if (isDevelopment) {
+    return (
+      <Switch>
+        <Route exact path='/' component={Homepage} />
+        <Route exact path='/latest' component={Latest} />
+        <Route path="*" component={PageNotFound} />
+      </Switch>
+    )
+  } else {
+    return (
+      <Switch>
+        <Route exact path='/rwhfc-react' component={Homepage} />
+        <Route exact path='/rwhfc-react/latest' component={Latest} />
+        <Route path="*" component={PageNotFound} />
+      </Switch>
+    )
+  }
 }
 
 class Main extends React.Component {
