@@ -40,10 +40,32 @@ function Routes() {
 }
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      pageloaded: false
+    }
+  }
+
+  componentDidMount() {
+    if (window.location.pathname === '/') {
+      window.location.pathname = '/rwhfc-react'
+    }
+
+    this.setState({
+      pageloaded: true
+    })
+  }
+
   render() {
     return (
       <div>
-        <Routes />
+        {this.state.pageloaded ?
+          <Routes />
+        :
+          null
+        }
       </div>
     )
   }
