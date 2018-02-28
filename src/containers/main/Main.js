@@ -32,8 +32,8 @@ import Latest from '../latest/Latest.js'
 function Routes() {
     return (
       <Switch>
-        <Route exact path='/rwhfc-react' component={Homepage} />
-        <Route exact path='/rwhfc-react/latest' component={Latest} />
+        <Route exact path='/' component={Homepage} />
+        <Route exact path='/latest' component={Latest} />
         <Route path="*" component={PageNotFound} />
       </Switch>
     )
