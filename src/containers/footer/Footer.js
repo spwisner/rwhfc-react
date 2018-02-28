@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
           <Mailchimp />
         </Col>
         <Col xs={6}>
-          <a href="https://www.facebook.com/Robert-W-Hazel-for-US-Congress-955028871329095/" target="_blank">
+          <a href="https://www.facebook.com/Robert-W-Hazel-for-US-Congress-955028871329095/" rel="noopener noreferrer" target="_blank">
             <FacebookLogo />
           </a>
         </Col>

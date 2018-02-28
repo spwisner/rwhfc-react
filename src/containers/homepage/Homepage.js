@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
-import FacebookLogo from '../../assets/FindUsOnFacebook.js';
+// import FacebookLogo from '../../assets/FindUsOnFacebook.js';
 import Footer from '../footer/Footer.js';
 
 export default class Homepage extends React.Component {

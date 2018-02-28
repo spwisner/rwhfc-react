@@ -9,9 +9,10 @@ import {BrowserRouter} from 'react-router-dom';
 // import 'bootstrap';
 import 'react-bootstrap/dist/react-bootstrap.js'
 import 'jquery/dist/jquery.min.js'
+import 'jquery'
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-// import 'jquery'
+// import 'bootstrap/dist/js/bootstrap.js';
+import 'jquery'
 import './style/App.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';

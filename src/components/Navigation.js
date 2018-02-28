@@ -1,6 +1,6 @@
 // Package Imports
 import React from 'react';
-import {Nav, Navbar, NavDropdown, NavItem, MenuItem} from 'react-bootstrap';
+import {Nav, Navbar, NavItem} from 'react-bootstrap';
 import {IndexLinkContainer} from 'react-router-bootstrap';
 
 function Navigation(props) {
