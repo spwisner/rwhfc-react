@@ -7,7 +7,7 @@ function Navigation(props) {
   return (
     <Navbar collapseOnSelect>
       <Navbar.Header>
-        <IndexLinkContainer to='/'>
+        <IndexLinkContainer to='/rwhfc-react'>
           <Navbar.Brand>
             Robert W. Hazel For Congress
           </Navbar.Brand>
@@ -16,10 +16,10 @@ function Navigation(props) {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
-          <IndexLinkContainer to="/">
+          <IndexLinkContainer to="/rwhfc-react">
             <NavItem eventKey={1}>Home</NavItem>
           </IndexLinkContainer>
-          <IndexLinkContainer to="/latest">
+          <IndexLinkContainer to="/rwhfc-react/latest">
             <NavItem eventKey={2}>Latest</NavItem>
           </IndexLinkContainer>
         </Nav>
