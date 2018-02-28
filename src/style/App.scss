@@ -1,512 +1,204 @@
 // ///// Variables /////
-//
-// // Color Variables
-// $dark-blue: #0c2340;
-// $light-blue: #4b92db;
-// $red: #c8102e;
-// $gray: #a5acaf;
-// $light-gray: #d3d3d3;
-// $middle-gray: #dcdcdc;
-// $white: #fff;
-// $black: #000;
-// $green: #0c4029;
-//
-// // Progress
-// $progress-zero: #fb4b4b;
-// $progress-one: #ffa879;
-// $progress-two: #ffc163;
-// $progress-three: #ffc163;
-// $progress-four: #feff5c;
-// $progress-four-bold: #cc0;
-// $progress-five: #c0ff33;
-// $progress-six: #008000;
-//
-// ///// Navigation /////
-//
-// // Navbar
-// .navbar-inverse {
-//   background-color: $dark-blue;
-//
-//   // Navbar Brand
-//   .navbar-brand {
-//     color: $white;
-//
-//     &:hover {
-//       color: $white;
-//     }
-//   }
-//
-//   // Navbar Dropdown Links
-//   .navbar-nav > .open {
-//     a {
-//       background-color: $dark-blue;
-//       color: $white;
-//
-//       &:hover {
-//         background-color: $light-blue;
-//         color: $white;
-//       }
-//       &:focus {
-//         background-color: $dark-blue;
-//         color: $white;
-//       }
-//       &:active {
-//         background-color: $dark-blue;
-//         color: $white;
-//       }
-//     }
-//   }
+
+$us-blue: #002664;
+$us-white: #fff;
+$us-red: #bb133e;
+
+body {
+  background-color: $us-blue;
+  font-family: 'Raleway', sans-serif;
+  // color: $us-white;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+
+  img {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+}
+
+.details {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+// a {
+//   color: white !important;
 // }
-//
-// // Navbar Dropdown
-// .navbar-inverse .navbar-nav li {
-//   &.active {
-//     a {
-//       background-color: $light-blue;
-//       color: $white;
-//       &:hover {
-//         background-color: $light-blue;
-//         color: $white;
-//       }
-//     }
-//   }
-//
-//   a[role="menuitem"] {
-//     background-color: $white;
-//     color: $dark-blue;
-//
-//     &:hover {
-//       background-color: $light-gray;
-//       color: $dark-blue;
-//     }
-//   }
-// }
-//
-// .navbar-inverse .navbar-nav li[role="presentation"] {
-//   &.active {
-//     a {
-//       background-color: $dark-blue;
-//       color: $white;
-//       &:hover {
-//         background-color: $dark-blue;
-//         color: $white;
-//       }
-//     }
-//   }
-// }
-//
-// .navbar-fixed-top .container {
-//   margin-left: 0;
-//   margin-right: 0;
-//   width: 100%;
-// }
-//
-// // Body //
-// body {
-//   font-family: 'Roboto', sans-serif;
-//   color: $black;
-//   font-size: 16px;
-//   // Margin to Place Body Below Nav
-//   margin-top: 51px;
-// }
-//
-// // Headers //
-// h1 {
-//   color: $dark-blue;
-// }
-//
-// h2 {
-//   color: $light-blue;
-// }
-//
-// h3 {
-//   font-size: 18px;
-//   color: $red;
-// }
-//
-// h4 {
-//   color: $white;
-// }
-//
-// h5 {
-//   color: $gray;
-// }
-//
-// // Modal //
-// .custom-modal-header {
-//   background-color: $light-blue;
-// }
-//
-// // .custom-modal-body {
-// //   background-color: $red;
-// //   color: $white;
-// // }
-//
-// // .custom-modal-footer {
-// //   background-color: $light-blue;
-// // }
-//
-// // Pager
-// ul.pager {
-//   a {
-//     background-color: $red;
-//     color: $white;
-//
-//     &:hover {
-//       background-color: $red;
-//       color: $white;
-//       opacity: .9;
-//     }
-//   }
-// }
-//
-// // Progress Fonts
-// .progress-zero {
-//   color: $progress-zero;
-// }
-//
-// .progress-one {
-//   color: $progress-one;
-// }
-//
-// .progress-two {
-//   color: $progress-two;
-// }
-//
-// .progress-three {
-//   color: $progress-three;
-// }
-//
-// .progress-four {
-//   color: $progress-four-bold;
-// }
-//
-// .progress-five {
-//   color: $progress-five;
-// }
-//
-// .progress-six {
-//   color: $progress-six;
-// }
-//
-// // Progress Bar Colors
-// .less-than-twenty-five .progress-bar {
-//   background-color: $progress-one;
-// }
-//
-// .twenty-five-to-fifty .progress-bar {
-//   background-color: $progress-three;
-// }
-//
-// .fifty-to-seventy-five .progress-bar {
-//   background-color: $progress-four-bold;
-//   color: $black;
-// }
-//
-// .seventy-five-to-ninety-nine .progress-bar {
-//   background-color: $progress-five;
-//   color: $black;
-// }
-//
-// .one-hundred .progress-bar {
-//   background-color: $progress-six;
-// }
-//
-//
-//
-// // Table //
-// .custom-table-header th {
-//   color: $dark-blue;
-//   font-weight: 600;
-// }
-//
-// // Sidebar //
-//
-// // Hide Sidebar
-// .hideColumn {
-//   display: none;
-// }
-//
-// .sidebar-header {
-//   font-size: 18px;
-//   color: $white;
-//   margin-top: 20px;
-//   margin-bottom: 10px;
-//   text-align: center;
-// }
-//
-// .sidebar-panel {
-//   h4 {
-//     cursor: pointer;
-//     text-align: center;
-//   }
-// }
-//
-// // Clearfix
-// .clearfix {
-//   overflow: auto;
-// }
-//
-// .clearfix::after {
-//   clear: both;
-//   content: '';
-//   display: table;
-// }
-//
-// // White Space & Wrapping
-// .maintain-spacing {
-//   // To maintain formating of user submission
-//   white-space: pre-wrap;
-// }
-//
-// .wrap-text {
-//   // Primarily to handle headers with long text on mobile devices
-//   overflow-wrap: break-word;
-// }
-//
-// // Generic Classes //
-//
-// // Text Decoration
-// .underline {
-//   text-decoration: underline;
-// }
-//
-// // Margins
-// .margin-top-zero {
-//   margin-top: 0px;
-// }
-// .margin-top-ten {
-//   margin-top: 10px;
-// }
-//
-// .margin-top-fifteen {
-//   margin-top: 15px;
-// }
-//
-// .margin-top-twenty {
-//   margin-top: 20px;
-// }
-//
-// .margin-top-twenty-five {
-//   margin-top: 25px;
-// }
-//
-// // For Carousel
-// .carousel-control {
-//   &.left {
-//     background-image: none;
-//     .glyphicon {
-//       color: $dark-blue
-//     }
-//   }
-//   &.right {
-//     background-image: none;
-//     .glyphicon {
-//       color: $dark-blue
-//     }
-//   }
-// }
-//
-// .carousel-indicators {
-//   background-color: $gray;
-//   border-radius: 10px;
-//   opacity: .6;
-//   li {
-//     background-color: $white;
-//     &.active {
-//       background-color: $black;
-//     }
-//   }
-// }
-//
-// .carousel-header {
-//   font-size: 24px;
-//   color: $red;
-// }
-//
-// .carousel-custom-height {
-//   height: 400px;
-// }
-//
-// .font-size-twenty-four {
-//   font-size: 24px;
-//   margin: 0;
-// }
-//
-// .margin-top-thirty {
-//   margin-top: 30px;
-// }
-//
-// .margin-top-fifteen {
-//   margin-top: 15px;
-// }
-//
-// .margin-top-twenty {
-//   margin-top: 20px;
-// }
-//
-// .margin-bottom-twenty {
-//   margin-bottom: 20px;
-// }
-//
-// .margin-left-twenty {
-//   margin-left: 20px;
-// }
-//
-// .margin-right-twenty {
-//   margin-right: 20px;
-// }
-//
-// .sidebar-container {
-//   width:24%;
-//   margin-left: 1%;
-//   margin-top: 50px;
-//   background-color: $green;
-//   border-radius: 8px;
-// }
-// // Carousel
-// .image-center img{
-//   margin: 0 auto;
-// }
-// // Text Alignment
-// .text-align-right {
-//   text-align: right;
-// }
-//
-// // Used For Panel Headers To Align With Create Btn
-// .remove-line-height {
-//   line-height: inherit;
-// }
-//
-// // Wrap -> Link Btns
-// .ws-pre-wrap {
-//   white-space: pre-wrap;
-// }
-//
-// // Inputs
-// input[type="text"] {
-//   max-width: 500px;
-// }
-//
-// textarea {
-//   max-width: 500px;
-// }
-//
-// input[type="date"] {
-//   max-width: 250px;
-// }
-//
-// // Accordion
-// .accordion-title {
-//   background-color: $middle-gray;
-//   text-align: center;
-// }
-//
-//
-// // Media Queries //
-//
-// // Sidebar Hide
-//
-// @media screen
-//   and (min-width: 300px)
-//   and (max-width: 667px) {
-//     .mobile-remove-top-margin {
-//       margin-top: 0;
-//     }
-//
-//     .carousel-custom-height {
-//       height: 300px;
-//     }
-//
-//     // For Sign-In Toggle
-//     .mobile-pre-wrap {
-//       white-space: pre-wrap;
-//     }
-//
-//     .mobile-remove-pull-left {
-//       float: none!important
-//     }
-//
-//     .mobile-remove-right-margin {
-//       margin-right: 0;
-//     }
-//     .mobile-hide {
-//       display: none;
-//     }
-//     .mobile-full-width {
-//       width: 100%;
-//     }
-//     .mobile-hide-margin-top {
-//       margin-top: 15px;
-//     }
-//
-//     // To center edit/delete buttons
-//     .pull-right {
-//       float: none!important;
-//     }
-//
-//     // Remove Pull on Visitor
-//     .mobile-remove-pull a {
-//       float: none!important;
-//     }
-//
-//     .btn-toolbar {
-//       float: none!important;
-//       text-align: center!important;
-//     }
-//     .btn-group {
-//       float: none!important
-//     }
-//
-//     // For Edit/Delete Glyph Btns in Panel Header //
-//     .btn-toolbar a {
-//       float: none!important;
-//     }
-//
-//     .maintain-spacing-mobile {
-//       // To wrap header panel text for edit/delete glyph //
-//       white-space: pre-wrap;
-//     }
-//
-//     // For Centering Create Button In Panel Header //
-//     .btn-toolbar button {
-//       float: none!important;
-//     }
-//
-//     // Center Text For Table Headers//
-//     .mobile-text-center {
-//       text-align:center
-//     }
-//
-//     // To Hide Column Value on Phones For Tables //
-//     .mobile-hide-td {
-//       display: none;
-//     }
-//
-//     // To add space to top of delete button for mobile //
-//     .mobile-margin-top-ten {
-//       margin-top: 10px;
-//     }
-// }
-//
-// @media only screen
-//   and (min-device-width: 667px) {
-//     .mobile-break {
-//       display: none;
-//     }
-//
-//     .panel-margin-ctrl {
-//       margin: 25px 50px;
-//     }
-// }
-//
-// @media (min-width: 1000px) {
-//   .panel-show-margin-ctrl {
-//     margin-right: 100px;
-//   }
-//
-//   .panel-create-margin-ctrl {
-//     margin-right: 200px;
-//    }
-//
-//  }
+
+.facebook-icon {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+
+  svg {
+    fill: $us-blue;
+  }
+}
+
+.navbar {
+  &.navbar-default {
+    background-color: $us-white;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+  }
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  color: $us-blue !important;
+}
+
+.image-text-container {
+  img {
+    width: 100% !important;
+    max-width: 100% !important
+  }
+}
+
+.text-statement {
+  color: black !important;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.rwh-signature {
+  margin-top: 30px
+}
+
+.message-header {
+  color: $us-red;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.message-container {
+  background-color: $us-white !important;
+}
+
+.form-header {
+  color: $us-red;
+  padding-top: 5px;
+  text-align: center
+}
+
+#mc_embed_signup {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+
+  #mc-embedded-subscribe {
+    background-color: $us-red;
+  }
+}
+
+.mailchimp-container {
+  background-color: white;
+  margin-top: 15px;
+}
+
+.message-col {
+  background-color: $us-white !important;
+}
+
+.mailchimp-row {
+  margin-bottom: 15px;
+}
+
+.footer-wrap {
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  .container {
+    margin-right: 0 !important;
+    margin-left: 20px !important;
+  }
+}
+
+@media (min-width: 951px) {
+
+  .row{
+      overflow: hidden;
+  }
+
+  .content-row {
+    margin-right: 0 !important;
+  }
+
+  [class*="col-xs-"]{
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+  }
+}
+
+@media (max-width: 950px) {
+  .image-text-container {
+    text-align: center;
+    img {
+      width: 80% !important;
+      max-width: 100% !important
+    }
+  }
+
+  .col-xs-6 {
+    width: 100% !important;
+  }
+
+  .mailchimp-container {
+    // margin-top: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .image-text-container {
+    margin-bottom: 15px;
+  }
+
+  .message-col {
+    padding-bottom: 15px;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .image-text-container {
+    text-align: center;
+    img {
+      width: 100% !important;
+      max-width: 100% !important
+    }
+  }
+
+  .navbar {
+    .container {
+      margin-right: 5px !important;
+      margin-left: 20px !important;
+    }
+
+    a {
+      text-align: center;
+    }
+  }
+}
