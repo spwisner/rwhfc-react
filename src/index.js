@@ -17,6 +17,11 @@ import './style/App.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+if (window.location.pathname === '/') {
+  console.log('true');
+  window.location.pathname = '/rwhfc-react'
+}
+
 ReactDOM.render((
   <BrowserRouter>
     <App />
