@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^1.1.0",
     "jquery": "^3.3.1",
     "node-sass-chokidar": "0.0.3",
     "popper.js": "^1.12.9",
@@ -32,6 +32,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "homepage": "https://spwisner.github.io/rwhfc-react"
+  }
 }
