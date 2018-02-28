@@ -30,7 +30,8 @@ body {
 
 .white-background {
   background-color: $us-white;
-  margin: 15px
+  margin: 15px;
+  overflow: hidden !important;
 }
 
 #mc_embed_signup {
@@ -158,6 +159,20 @@ body {
 
 .image-center img{
   margin: 0 auto;
+}
+
+.sub-message-header {
+  color: $us-blue;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.registration-reminder {
+  font-size: 16px;
 }
 
 @media (min-width: 951px) {
